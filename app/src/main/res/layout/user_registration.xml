@@ -66,6 +66,7 @@
             android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
             android:layout_marginBottom="100dp"
             android:background="#22b8f0"
             android:text="Register"

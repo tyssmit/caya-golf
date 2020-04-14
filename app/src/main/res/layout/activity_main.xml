@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <Button
-        android:id="@+id/logInSubmit"
+        android:id="@+id/CreateSubmit"
         android:layout_width="164dp"
         android:layout_height="63dp"
         android:layout_marginTop="100dp"

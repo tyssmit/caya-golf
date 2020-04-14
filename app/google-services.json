@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "94760917165",
+    "firebase_url": "https://cayadatabase.firebaseio.com",
+    "project_id": "cayadatabase",
+    "storage_bucket": "cayadatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94760917165:android:053e929a397b943e4f0e24",
+        "android_client_info": {
+          "package_name": "com.globomantics.cayagolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94760917165-e5jr9g30731q1orhcpu1on13pdpfn65g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.globomantics.cayagolf",
+            "certificate_hash": "747f54dffe730303fb438ba601c2994a60549cb9"
+          }
+        },
+        {
+          "client_id": "94760917165-qh79bo21eib291to9iv7h1usrk3gka54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQIX_dDm4DCxUpZ16l_jxo42YD-HXf1g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94760917165-qh79bo21eib291to9iv7h1usrk3gka54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

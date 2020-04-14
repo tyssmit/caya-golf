@@ -22,96 +22,45 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.142"
+            app:layout_constraintVertical_bias="0.105"
             app:srcCompat="@drawable/cayagolf_logo_200_60" />
-
-        <EditText
-            android:id="@+id/firstNameReg"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="First Name"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <EditText
             android:id="@+id/passwordReg"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="72dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/userNameReg"
-            app:layout_constraintStart_toStartOf="@+id/userNameReg"
-            app:layout_constraintTop_toBottomOf="@+id/userNameReg" />
-
-        <EditText
-            android:id="@+id/confPasswordReg"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/passwordReg"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/passwordReg"
-            app:layout_constraintTop_toBottomOf="@+id/passwordReg" />
+            app:layout_constraintBottom_toTopOf="@+id/register"
+            app:layout_constraintEnd_toEndOf="@+id/emailReg"
+            app:layout_constraintStart_toStartOf="@+id/emailReg"
+            app:layout_constraintTop_toBottomOf="@+id/emailReg" />
 
         <Button
             android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
             android:layout_marginBottom="100dp"
             android:background="#22b8f0"
             android:text="Register"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/confEmailReg" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/emailReg"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="80dp"
             android:ems="10"
             android:hint="Email Address"
             android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="@+id/confPasswordReg"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/confPasswordReg"
-            app:layout_constraintTop_toBottomOf="@+id/confPasswordReg" />
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <EditText
-            android:id="@+id/confEmailReg"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="Confirm Email Address"
-            android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="@+id/emailReg"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/emailReg"
-            app:layout_constraintTop_toBottomOf="@+id/emailReg" />
-
-        <EditText
-            android:id="@+id/userNameReg"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="User Name"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/firstNameReg"
-            app:layout_constraintStart_toStartOf="@+id/firstNameReg"
-            app:layout_constraintTop_toBottomOf="@+id/firstNameReg" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

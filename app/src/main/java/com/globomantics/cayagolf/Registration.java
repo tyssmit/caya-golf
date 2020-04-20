@@ -44,17 +44,13 @@ public class Registration extends AppCompatActivity {
             public void onClick(View v){
                 String email = emailReg.getText().toString().trim();
                 String password = passwordReg.getText().toString().trim();
-                String user =  userName.getText().toString().trim();
+
                 if(TextUtils.isEmpty(email)){
                     emailReg.setError("Please enter an email");
                     return;
                 }
                 if(TextUtils.isEmpty(password)){
                     passwordReg.setError("Please enter an password");
-                    return;
-                }
-                if(TextUtils.isEmpty(user)){
-                    userName.setError("Please enter a user name");
                     return;
                 }
                 if(password.length() < 6){

@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        tools:context=".Login">
+        tools:context=".Login"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/imageView5"
@@ -28,11 +30,88 @@
             android:id="@+id/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:layout_marginBottom="104dp"
+            android:background="#22b8f0"
+            android:onClick="logout"
             android:text="LOGOUT"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            android:onClick="logout"/>
+            app:layout_constraintTop_toBottomOf="@+id/userProfile" />
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="97dp"
+            android:layout_height="63dp"
+            android:background="#2e4f6e"
+            android:text="POST"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <Button
+            android:id="@+id/scrambleButton"
+            android:layout_width="97dp"
+            android:layout_height="63dp"
+            android:background="#22b8f0"
+            android:text="SCRAMBLE"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="426dp" />
+
+        <Button
+            android:id="@+id/teamButton"
+            android:layout_width="97dp"
+            android:layout_height="63dp"
+            android:background="#2e4f6e"
+            android:text="TEAM"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="426dp" />
+
+        <Button
+            android:id="@+id/soloButton"
+            android:layout_width="97dp"
+            android:layout_height="63dp"
+            android:background="#22b8f0"
+            android:text="solo"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="426dp" />
+
+        <Button
+            android:id="@+id/scoreButton"
+            android:layout_width="97dp"
+            android:layout_height="63dp"
+            android:background="#22b8f0"
+            android:text="SCORE"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <Button
+            android:id="@+id/cayaButton"
+            android:layout_width="97dp"
+            android:layout_height="63dp"
+            android:background="#2e4f6e"
+            android:text="CAYA"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <Button
+            android:id="@+id/userProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#2e4f6e"
+            android:text="MY ACCOUNT"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/scrambleButton"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/soloButton"
+            tools:layout_editor_absoluteY="526dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CayaGolf</string>
+    <string-array name="planets_array">
+    <item>Lakeside Golf Course</item>
+    <item>The Links</item>
+    <item>Karsten Creek</item>
+    <item >Cimmarron Trails</item>
+    <item>Stillwater Country Club</item>
+    </string-array>
 </resources>

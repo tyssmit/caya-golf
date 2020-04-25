@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <resources tools:ignore="MissingConstraints">
+        <string-array android:name="planets_array">
+            <item>Lakeside Golf Course</item>
+            <item>The Links</item>
+            <item>Karsten Creek</item>
+            <item>Cimmarron Trails</item>
+            <item>Stillwater Country Club</item>
+        </string-array>
+    </resources>
 
     <ImageView
         android:id="@+id/imageView"

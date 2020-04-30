@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">CayaGolf</string>
     <string-array name="planets_array">
+        <item>Select Golf Course</item>
     <item>Lakeside Golf Course</item>
     <item>The Links</item>
     <item>Karsten Creek</item>
     <item >Cimmarron Trails</item>
     <item>Stillwater Country Club</item>
     </string-array>
+    <string name="LOGOUT">LOGOUT</string>
+    <string name="score">SCORE</string>
+    <string name="caya">CAYA</string>
+    <string name="my_account">MY ACCOUNT</string>
+    <string name="team">TEAM</string>
+    <string name="solo">solo</string>
+    <string name="post">POST</string>
+    <string name="scramble">SCRAMBLE</string>
+    <string name="cayagolf">CAYAGOLF</string>
 </resources>

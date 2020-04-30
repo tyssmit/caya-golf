@@ -1,29 +1,35 @@
 package com.globomantics.cayagolf;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Scores extends AppCompatActivity {
+public class Scores extends Activity {
+
+
     Spinner CourseSelection;
     RadioButton radioBlack, radioBlue, radioWhite, radioOrange, radio18, radioFront9, radioBack9;
     Button buttonNext;
+    private Button btnScores;
     private DatabaseReference mDatabase;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.post_scores);
+        setContentView(R.layout.post_scores);}
+
+        public Scores(){
+        btnScores = findViewById(R.id.buttonNext);
         mDatabase = FirebaseDatabase.getInstance().getReference().child("AndroidView");
         Spinner CourseSelection = findViewById(R.id.CourseSelection);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.planets_array, android.R.layout.simple_spinner_item);
@@ -58,14 +64,18 @@ public class Scores extends AppCompatActivity {
         }
 
         });
-    }
-    private void setAdapter(ArrayAdapter<CharSequence> adapter) {
+
+        btnScores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveToScores();
+            }
+        });
         }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.spinner, menu);
-        return true;
+    private void moveToScores() {
+        Intent intent = new Intent(Scores.this, Post.class);
     }
+
+
 }

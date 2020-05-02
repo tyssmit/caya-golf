@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
+import androidx.annotation.NonNull;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -19,18 +21,17 @@ public class Scores extends Activity {
     Spinner CourseSelection;
     RadioButton radioBlack, radioBlue, radioWhite, radioOrange, radio18, radioFront9, radioBack9;
     Button buttonNext;
-    private Button btnScores;
+    private Button btnScores = findViewById(R.id.buttonNext);
     private DatabaseReference mDatabase;
 
-
+    @NonNull
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_scores);}
 
         public Scores(){
-        btnScores = findViewById(R.id.buttonNext);
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("AndroidView");
+            mDatabase = FirebaseDatabase.getInstance().getReference().child("AndroidView");
         Spinner CourseSelection = findViewById(R.id.CourseSelection);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.planets_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

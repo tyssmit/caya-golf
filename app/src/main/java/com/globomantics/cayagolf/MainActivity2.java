@@ -17,13 +17,6 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-            btnPost = (Button) findViewById(R.id.postButton);
-            btnPost.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    moveToPost();
-                }
-            });
         }
 
     public void logout(View view){
@@ -33,11 +26,8 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     }
-
-
-
-    public void moveToPost() {
-        Intent intent = new Intent(this, Scores.class);
-       startActivity(intent);
+    public void moveToPost(View view) {
+               startActivity(new Intent(getApplicationContext(),Scores.class));
+               finish();
     }
 }

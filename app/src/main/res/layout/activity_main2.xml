@@ -51,6 +51,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="49dp"
             android:background="#2e4f6e"
+            android:onClick="moveToPost"
             android:text="@string/post"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/soloButton"

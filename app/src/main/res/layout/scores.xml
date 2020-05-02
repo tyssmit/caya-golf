@@ -1,11 +1,422 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/add7"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="13dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/add8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole7"
+        app:layout_constraintTop_toBottomOf="@+id/add6" />
+
+    <Button
+        android:id="@+id/add8"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="63dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole8"
+        app:layout_constraintTop_toBottomOf="@+id/add7" />
+
+    <Button
+        android:id="@+id/minus9"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus8" />
+
+    <EditText
+        android:id="@+id/hole9"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add9"
+        app:layout_constraintStart_toEndOf="@+id/minus9"
+        app:layout_constraintTop_toBottomOf="@+id/hole8" />
+
+    <Button
+        android:id="@+id/add9"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="63dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole9"
+        app:layout_constraintTop_toBottomOf="@+id/add8" />
+
+    <Button
+        android:id="@+id/minus8"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus7" />
+
+    <EditText
+        android:id="@+id/hole8"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add8"
+        app:layout_constraintStart_toEndOf="@+id/minus8"
+        app:layout_constraintTop_toBottomOf="@+id/hole7" />
+
+    <Button
+        android:id="@+id/minus7"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus6" />
+
+    <EditText
+        android:id="@+id/hole7"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add7"
+        app:layout_constraintStart_toEndOf="@+id/minus7"
+        app:layout_constraintTop_toBottomOf="@+id/hole6" />
+
+    <Button
+        android:id="@+id/minus6"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus5" />
+
+    <Button
+        android:id="@+id/add6"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole6"
+        app:layout_constraintTop_toBottomOf="@+id/add5" />
+
+    <EditText
+        android:id="@+id/hole6"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add6"
+        app:layout_constraintStart_toEndOf="@+id/minus6"
+        app:layout_constraintTop_toBottomOf="@+id/hole5" />
+
+    <Button
+        android:id="@+id/minus5"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus4" />
+
+    <Button
+        android:id="@+id/add5"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="63dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole5"
+        app:layout_constraintTop_toBottomOf="@+id/add4" />
+
+    <EditText
+        android:id="@+id/hole5"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add5"
+        app:layout_constraintStart_toEndOf="@+id/minus5"
+        app:layout_constraintTop_toBottomOf="@+id/hole4" />
+
+    <Button
+        android:id="@+id/minus4"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus3" />
+
+    <Button
+        android:id="@+id/add4"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="82dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole4"
+        app:layout_constraintTop_toBottomOf="@+id/add3" />
+
+    <EditText
+        android:id="@+id/hole4"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add4"
+        app:layout_constraintStart_toEndOf="@+id/minus4"
+        app:layout_constraintTop_toBottomOf="@+id/hole3" />
+
+    <Button
+        android:id="@+id/minus2"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus1" />
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="82dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole2"
+        app:layout_constraintTop_toBottomOf="@+id/add1" />
+
+    <EditText
+        android:id="@+id/hole2"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/add2"
+        app:layout_constraintStart_toEndOf="@+id/minus2"
+        app:layout_constraintTop_toBottomOf="@+id/hole1" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="318dp"
         android:layout_height="118dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cayagolf_logo_200_60" />
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="138dp"
+        android:text="Enter Scores"
+        android:textAllCaps="true"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/hole1"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/hole2"
+        app:layout_constraintEnd_toStartOf="@+id/add1"
+        app:layout_constraintStart_toEndOf="@+id/minus1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/minus1"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/minus2"
+        app:layout_constraintEnd_toStartOf="@+id/hole1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/minus3"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hole3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus2" />
+
+    <EditText
+        android:id="@+id/hole3"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/hole4"
+        app:layout_constraintEnd_toStartOf="@+id/add3"
+        app:layout_constraintStart_toEndOf="@+id/minus3"
+        app:layout_constraintTop_toBottomOf="@+id/hole2"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/add3"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="82dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole3"
+        app:layout_constraintTop_toBottomOf="@+id/add2" />
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="70dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hole1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

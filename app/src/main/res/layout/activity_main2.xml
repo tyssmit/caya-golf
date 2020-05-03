@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         android:background="#FFFFFF"
         tools:context=".Login"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-179dp"
+        tools:layout_editor_absoluteY="-31dp">
 
         <ImageView
             android:id="@+id/imageView5"
@@ -21,10 +21,12 @@
             android:layout_marginTop="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.142"
-            app:srcCompat="@drawable/cayagolf_logo_200_60" />
+            app:layout_constraintVertical_bias="0.037"
+            app:srcCompat="@drawable/cayagolf_logo_200_60"
+            android:contentDescription="@string/cayagolf" />
 
         <Button
             android:id="@+id/logout"
@@ -34,7 +36,7 @@
             android:layout_marginBottom="104dp"
             android:background="#22b8f0"
             android:onClick="logout"
-            android:text="LOGOUT"
+            android:text="@string/LOGOUT"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,81 +48,102 @@
             android:id="@+id/postButton"
             android:layout_width="97dp"
             android:layout_height="63dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="49dp"
             android:background="#2e4f6e"
-            android:text="POST"
+            android:onClick="moveToPost"
+            android:text="@string/post"
             android:textColor="#FFFFFF"
-            app:layout_constraintStart_toStartOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            app:layout_constraintBottom_toTopOf="@+id/soloButton"
+            app:layout_constraintEnd_toStartOf="@+id/scoreButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/scrambleButton"
             android:layout_width="97dp"
             android:layout_height="63dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
             android:background="#22b8f0"
-            android:text="SCRAMBLE"
+            android:text="@string/scramble"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/cayaButton" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/teamButton"
+            app:layout_constraintTop_toTopOf="@+id/teamButton" />
 
         <Button
             android:id="@+id/teamButton"
             android:layout_width="97dp"
             android:layout_height="63dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="101dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
             android:background="#2e4f6e"
-            android:text="TEAM"
+            android:text="@string/team"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/scoreButton" />
+            app:layout_constraintBottom_toTopOf="@+id/userProfile"
+            app:layout_constraintEnd_toStartOf="@+id/scrambleButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/soloButton"
+            app:layout_constraintTop_toBottomOf="@+id/postButton"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/soloButton"
             android:layout_width="97dp"
             android:layout_height="63dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
             android:background="#22b8f0"
-            android:text="solo"
+            android:text="@string/solo"
             android:textColor="#FFFFFF"
-            app:layout_constraintStart_toStartOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/postButton" />
+            app:layout_constraintEnd_toStartOf="@+id/teamButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/teamButton" />
 
         <Button
             android:id="@+id/scoreButton"
             android:layout_width="97dp"
             android:layout_height="63dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="101dp"
+            android:layout_marginTop="2dp"
             android:background="#22b8f0"
-            android:text="SCORE"
+            android:text="@string/score"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            app:layout_constraintBottom_toTopOf="@+id/teamButton"
+            app:layout_constraintEnd_toStartOf="@+id/cayaButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/postButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.544" />
 
         <Button
             android:id="@+id/cayaButton"
             android:layout_width="97dp"
             android:layout_height="63dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="32dp"
             android:background="#2e4f6e"
-            android:text="CAYA"
+            android:text="@string/caya"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            app:layout_constraintBottom_toTopOf="@+id/scrambleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/scoreButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/userProfile"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="293dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="230dp"
             android:background="#2e4f6e"
-            android:text="MY ACCOUNT"
+            android:text="@string/my_account"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/scrambleButton"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="@+id/soloButton"
-            app:layout_constraintTop_toBottomOf="@+id/teamButton" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

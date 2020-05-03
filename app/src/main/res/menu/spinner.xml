@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array android:name="planets_array">
+        <item android:title="TODO">Lakeside Golf Course</item>
+        <item android:title="TODO">The Links</item>
+        <item android:title="TODO">Karsten Creek</item>
+        <item android:title="TODO">Cimmarron Trails</item>
+        <item android:title="TODO">Stillwater Country Club</item>
+    </string-array>
+</menu>

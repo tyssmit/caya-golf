@@ -27,7 +27,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
     public void moveToPost(View view) {
-               startActivity(new Intent(getApplicationContext(),Scores.class));
-               finish();
+        startActivity(new Intent(getApplicationContext(),Post.class));
+        finish();
+
     }
 }

@@ -49,10 +49,11 @@ Number hole1, hole2, hole3, hole4, hole5, hole6, hole7, hole8, hole9;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.scores);
-            }
+        setContentView(R.layout.post_scores);
 
-     @SuppressLint("WrongViewCast")
+    }
+
+
      public Post(){
         Add1 = findViewById(id.add1);
         Add2 = findViewById(id.add2);
